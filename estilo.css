@@ -1,0 +1,99 @@
+/* Falativa: as cores saem do ícone do app (amarelo, rosa da língua, preto). */
+:root {
+  --sol: #FFE04D;
+  --pagina: #FFFAEB;
+  --tinta: #1C1C21;
+  --suave: #5E5A52;
+  --rosa: #D61F52;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: ui-rounded, -apple-system, BlinkMacSystemFont, "SF Pro Rounded", "Segoe UI", Roboto, sans-serif;
+  color: var(--tinta);
+  background: var(--pagina);
+  line-height: 1.55;
+}
+
+a { color: var(--rosa); }
+
+/* Página inicial: tudo no centro, sobre o amarelo. */
+.inicio {
+  min-height: 100vh;
+  min-height: 100dvh;
+  background: var(--sol);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 48px 20px 28px;
+}
+
+.inicio main { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+
+.icone {
+  width: 112px;
+  height: 112px;
+  border-radius: 26px;
+  box-shadow: 0 10px 30px rgba(28, 28, 33, 0.18);
+  margin-bottom: 22px;
+}
+
+.inicio h1 {
+  margin: 0;
+  font-size: 40px;
+  font-weight: 900;
+  letter-spacing: -0.5px;
+}
+
+.frase {
+  margin: 8px 0 30px;
+  font-size: 19px;
+  max-width: 340px;
+}
+
+.loja img { width: 180px; height: 60px; display: block; }
+
+.dica {
+  margin: 26px 0 0;
+  font-size: 14px;
+  color: var(--suave);
+  max-width: 320px;
+}
+
+.rodape {
+  font-size: 14px;
+  margin-top: 36px;
+}
+
+.rodape a { color: var(--tinta); text-decoration: none; margin: 0 8px; }
+.rodape a:hover { text-decoration: underline; }
+
+/* Páginas de texto: privacidade, termos, contato. */
+.texto {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 32px 20px 60px;
+}
+
+.texto .topo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: var(--tinta);
+  font-weight: 800;
+  font-size: 20px;
+  margin-bottom: 28px;
+}
+
+.texto .topo img { width: 40px; height: 40px; border-radius: 10px; }
+
+.texto h1 { font-size: 30px; font-weight: 900; margin: 0 0 4px; line-height: 1.2; }
+.texto h2 { font-size: 20px; font-weight: 800; margin: 32px 0 8px; }
+.texto .data { color: var(--suave); margin: 0 0 24px; }
+.texto li { margin-bottom: 6px; }
+.texto .rodape { border-top: 1px solid rgba(28, 28, 33, 0.12); padding-top: 20px; }
